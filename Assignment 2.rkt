@@ -5,6 +5,15 @@
    Evamarie Najera
 |#
 
+#|-----Function3------|#
+ (define(buildList N E1)
+    (if (= N 0) '()
+      (cons E1(buildList (- N 1) E1))))
+  
+     
+;testing (works but needs to be extended)
+(buildList 3 'A)
+
 #|-----Function 6-----|#
 (define (selectN n)
   (lambda (list)
