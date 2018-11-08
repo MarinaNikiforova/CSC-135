@@ -95,8 +95,6 @@
 
 #|-----Function 5------|#
 
-
-#|-----Function 6_-----|#
 (define (selectN n)
   (lambda (list)
     (define (iter l i)
