@@ -5,6 +5,16 @@
    Evamarie Najera
 |#
 
+#|-----Function2------|#
+
+(define(concatL L1 L2)
+  (cond ((null? L1) L2)
+        ((null? L2) L1)
+        (else (cons (car L1)(cons (car L2) (concatL (cdr L1) (cdr L2)))))))
+
+;test
+(concatL '((a b) (c d) (d e)) '((f f f) (d e s) (v v v)))
+
 #|-----Function3------|#
  (define(buildOne N E1)
     (if (= N 0) '()
